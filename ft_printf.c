@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abchouir <abchouir@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abchouir <abchouir@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 10:57:01 by abchouir          #+#    #+#             */
-/*   Updated: 2026/11/14 10:17:12 by abchouir         ###   ########.fr       */
+/*   Updated: 2026/11/14 16:47:27 by abchouir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	ft_printf(const char *format, ...)
 	int		count;
 	int		res;
 
-	if (!format)
+	if (!format || write(1, 0, 0) < 0)
 		return (-1);
 	i = 0;
 	count = 0;
